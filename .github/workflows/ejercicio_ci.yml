@@ -3,7 +3,9 @@ name: Run tests
 on:
   push:
     branches: [config/ci]
-
+    
+  pull_request:
+    branches: [main]
 jobs:
   pytest:
     runs-on: ubuntu-latest
